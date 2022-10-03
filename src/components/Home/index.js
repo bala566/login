@@ -16,17 +16,17 @@ class Home extends Component {
   render() {
     const {login} = this.state
     const text = login ? 'Welcome User' : 'Please Login'
-
     return (
       <div className="bg">
         <div className="card">
           <Message text={text} />
-          <button type="button" className="button" onClick={this.change}>
-            {login ? <Login /> : <Logout />}
+          <button className="button" type="button" onClick={this.change}>
+            {login ? <Logout /> : <Login />}
           </button>
         </div>
       </div>
     )
   }
 }
+
 export default Home
